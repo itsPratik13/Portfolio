@@ -7,3 +7,5 @@ git add.
 git commit -m "changes"
 <br>
 git push -u origin main
+<br>
+error while pushing : git pull    then push
