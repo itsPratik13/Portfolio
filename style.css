@@ -12,7 +12,7 @@
     --bg-color:#080808;
     --secondbg-color:#131313;
     --text-color:white;
-    --main-color:#00ffee;
+    --main-color:#00ff7f;
 
 
 }
@@ -28,5 +28,37 @@ body{
     position:fixed;
     top: 0;
     left: 0;
+    padding: 4rem 12% 4rem;  /* padding is top ,right, down ... left padding =right padding*/
+    background: black;
     width: 100%;
+    backdrop-filter: blur(10px); /* blurs the background*/
+    display: flex;
+    justify-content: space-between; /*uniform padding from all side
+     along the main axis in flexbox*/
+    align-items: center;
+    z-index: 5;
+}
+.logo{
+    font-size: 3rem;
+    color:var(--main-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease; /* ease trasition  uniform */
+
+}
+.logo:hover(){
+    transform: scale(1.1); /*scales by 1.1x*/
+
+}
+.logo span{
+    text-shadow: 0 0 25px var(--main-color);/* horizontal offset,
+    vertical offset, blur radius */
+}
+.navbar a{ /*  navbar a applies to all the anchor tags under the navbar*/
+    font-size: 1.8rem;
+    color:var(--text-color);
+    margin:0 0 4rem 4rem;
+    font-weight: 400;
+    transform: 0.3s ease;
+    border-bottom: 3px solid transparent;
 }
